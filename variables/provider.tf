@@ -1,5 +1,4 @@
+# Note: removing vars for id/secret because aws provider reads them from local env after "aws configure"
 provider "aws" {
-  access_key = var.AWS_ACCESS_KEY
-  secret_key = var.AWS_SECRET_KEY
-  region     = var.AWS_REGION
+  region = var.AWS_REGION
 }
